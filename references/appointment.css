@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+/* Bootstrap container */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+.pricing-table {
+  width:100%;
+  margin: 50px 0;
+  text-align: center;
+  font-family: Arial;
+  font-size: 14px;
+  color: #fff;
+}
+.pricing-table:before,
+.pricing-table:after {
+  content: " ";
+  display: table;
+}
+.pricing-table:after {
+  clear: both;
+}
+.pricing-table {
+  *zoom: 1;
+}
+.pricing-table ul:first-child {
+  margin-left: 0;
+}
+.pricing-table ul li {
+  padding: 10px 20px;
+}
+.col-price {
+  list-style:none;
+  padding: 0;
+  margin: 10px 1px;
+  position: relative;
+  display: block;
+  float:left;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.2s;
+}
+@media (min-width: 768px){
+  .col-price {
+    width: 37.7%;
+  }
+}
+@media (min-width: 992px){
+  .col-price {
+    width: 29%;
+  }
+}
+@media (min-width: 1200px){
+  .col-price {
+     width: 24.8%;
+  }
+}
+.col-price:hover {
+  box-shadow: 0 0 2px 2px #00aa72;
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1,1.1);
+  z-index: 1001;
+  cursor: pointer;
+}
+.col-price.stand-out {
+  z-index: 1000;
+  box-shadow: 0 0 2px 2px #00aa72;
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1,1.1);
+}
+.col-price li:nth-child(2n+1) {
+  background: #444;
+}
+.col-price li:nth-child(2n) {
+   background: #888;
+}
+
+.col-price li.header {
+  color: #00aa72;
+  font-size: 18px;
+  font-weight:bold;
+  background: #eee;
+}
+.col-price li.price {
+  color: #333;
+  background: #fff;
+}
+.col-price .price span {
+  font-size: 34px;
+}
+.col-price li.get-it {
+  background: #fff;
+}
+button {
+  padding: 5px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #00aa72;
+  box-shadow: 0 3px #009a67;
+  background: #00aa72;
+}

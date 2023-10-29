@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Department.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" type="text/css" href="{{url_for('static',filename='ent_dpmt.css')}}"><link rel="stylesheet" type="text/css" href="{{url_for('static',filename='ent_appointment.css')}}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="main-header">
+  <div class="overlay">
+    <div class="container">
+      <header>
+        <div class="logo"><img src="https://images.vexels.com/media/users/3/142777/isolated/preview/84711206e52e0d4ff6c793cb476ea264-heartbeat-star-medical-logo-by-vexels.png" alt=""/><span>Book Appointment</span></div>
+        <div class="nav"><a class="active" href="/patient_home">Home</a><a class="active" href="/logout">Logout</a></div>
+        <div class="menu"><i class="fa fa-bars"></i></div>
+      </header>
+      <div class="content">
+        <div class="container">
+          <!--
+          {%if domm%}          
+          {%for doctor in domm%}
+          <div class="pricing-table">
+          <ul class="col-price">
+            <li class="header">{{doctor.domain}}</li>
+            <li class="price"><span>{{doctor.first_name}}</span></li>
+            <li>{{doctor.specialization}}</li>
+            <li>{{doctor.email}}</li>
+            <li>{{doctor.day}}</li>
+            <li>{{doctor.slot}}</li>
+            <li class="get-it"><form method="POST"><button onclick="myFunction()" type="submit" id="button" name="button" value="{{domm.first_name}}">Book now</button></form></li>
+            </ul>
+            {% endfor %}
+            {% else %}
+              <p>No doctors found with the specified domain.</p>
+            {%endif%}
+           -->
+            
+           
+            <div class="pricing-table">
+              <ul class="col-price">
+                <li class="header">Otolaryngologist</li>
+                  <li class="price"><span>Dr.VINOD</span></li>
+                <li>Spc. Ear, nose, throat</li>
+                <li>vinod999@gmail.com</li>
+                <li>Available : SUNDAY</li>
+                <li>Slot : 3-7(PM)</li>
+                <li class="get-it"><form method="POST"><button onclick="myFunction()" type="submit" id="button" name="button" value="gayathri">Book now</button></form></li>
+                </ul>
+            <ul class="col-price">
+            <li class="header">Otolaryngologist</li>
+              <li class="price"><span>Dr.GAYATHRI</span></li>
+            <li>Spc. Ear, nose, throat</li>
+            <li>gayathri999@gmail.com</li>
+            <li>Available : MONDAY</li>
+            <li>Slot : 10-2(AM)</li>
+            <li class="get-it"><form method="POST"><button onclick="myFunction()" type="submit" id="button" name="button" value="gayathri">Book now</button></form></li>
+            </ul>
+            <ul class="col-price">
+            <li class="header">MBBS,MS</li>
+              <li class="price"><span>Dr.KALA</span></li>
+            <li>Spc. Ear, nose, throat</li>
+            <li>kala999@gmail.com</li>
+            <li>Available : THURSDAY</li>
+            <li>Slot : 2-7(pm)</li>
+            <li class="get-it"><form method="POST"><button onclick="myFunction()" type="submit" id="button" name="button" value="kala">Book now</button></form></li>
+            </ul>
+            <ul class="col-price">
+            <li class="header">MBBS,DNB</li>
+              <li class="price"><span>Dr.GIRIJA</span></li>
+            <li>Spc. Head and Neck Surgeon</li>
+            <li>girija999@gmail.com</li>
+            <li>Available : SATURDAY</li>
+            <li>Slot : 9-11(AM)</li>
+            <li class="get-it"><form method="POST"><button onclick="myFunction()" type="submit" id="button" name="button" value="girija">Book now</button></form></li>
+            </ul>
+           
+          </div>
+          
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+<section id="social-media">
+  <div class="container">
+    <div class="social-wrapper">
+      
+      <div class="slug"><span>Made with Love By HEAL</span><img src="https://images.vexels.com/media/users/3/142777/isolated/preview/84711206e52e0d4ff6c793cb476ea264-heartbeat-star-medical-logo-by-vexels.png" alt=""/></div>
+    </div>
+  </div>
+</section>
+<!-- partial -->
+
+<script>
+  function myFunction() {
+    alert("Booking details submitted Successfully!");
+  }
+  </script>
+</body>
+</html>

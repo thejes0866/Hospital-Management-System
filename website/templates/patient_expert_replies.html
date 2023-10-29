@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Expert Replies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" type="text/css" href="{{url_for('static',filename='ent_dpmt.css')}}"><link rel="stylesheet" type="text/css" href="{{url_for('static',filename='ent_appointment.css')}}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="main-header">
+  <div class="overlay">
+    <div class="container">
+      <header>
+        <div class="logo"><img src="https://images.vexels.com/media/users/3/142777/isolated/preview/84711206e52e0d4ff6c793cb476ea264-heartbeat-star-medical-logo-by-vexels.png" alt=""/><span> {{user.first_name}},Your Queries Answerd </span></div>
+        <div class="nav"><a class="active" href="/patient_home">Home</a><a class="active" href="/logout">Logout</a></div>
+        <div class="menu"><i class="fa fa-bars"></i></div>
+      </header>
+      <div class="content">
+        <div class="container">
+          <div class="pricing-table">
+          <ul class="col-price">
+            {% for reply in replies%}
+            <li class="header">{{reply.comments}}</li>
+            <li class="price" >{{reply.reply}}</li><br>
+            <li></li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+<section id="social-media">
+  <div class="container">
+    <div class="social-wrapper">
+      
+      <div class="slug"><span>Made with Love By HEAL</span><img src="https://images.vexels.com/media/users/3/142777/isolated/preview/84711206e52e0d4ff6c793cb476ea264-heartbeat-star-medical-logo-by-vexels.png" alt=""/></div>
+    </div>
+  </div>
+</section>
+<!-- partial -->
+
+<script>
+  function myFunction1() {
+    alert("No Worries Yet, But do please check the status once in a while");
+  }
+  function myFunction2() {
+    alert("sorry to inform you, your appointment got cancelled");
+  }
+  </script>
+</body>
+</html>

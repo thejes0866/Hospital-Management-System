@@ -1,0 +1,108 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+    content %}
+    <form method="POST">
+      <h3 align="center">Doctor-Sign Up</h3>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="doc_email"
+          name="doc_email"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="doc_firstName">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="doc_firstName"
+          name="doc_firstName"
+          placeholder="Enter first name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="doc_id">Your Unique I D</label>
+        <input
+          type="number"
+          class="form-control"
+          id="doc_id"
+          name="doc_id"
+          placeholder="Enter your unidue I D"
+        />
+      </div><div class="form-group">
+        <label for="domain">Work Domain</label><br>
+        <select name="domain">
+          <option value="GeneralPhysician">Physician</option>
+          <option value="Pediatrician">Pediatrician</option>
+          <option value="Dentist">Dentist</option>
+          <option value="ENT">ENT</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="doc_phno">Phone Number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="doc_phno"
+          name="doc_phno"
+          placeholder="Enter first name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="doc_spc">Specialization</label>
+        <input
+          type="text"
+          class="form-control"
+          id="doc_spc"
+          name="doc_spc"
+          placeholder="Enter specialization"
+        />
+      </div>
+      <div class="form-group">
+        <label for="doc-day">Available Day</label><br>
+        <select name="doc_day">
+          <option value="sunday">SUNDAY</option>
+          <option value="monday">MONDAY</option>
+          <option value="tuesday">TUESDAY</option>
+          <option value="wednesday">WEDNESDAY</option>
+          <option value="thursday">THURSDAY</option>
+          <option value="friday">FRIDAY</option>
+          <option value="saturday">SATURDAY</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="doc_slot">Slot(Time)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="doc_slot"
+          name="doc_slot"
+          placeholder="Enter slot"
+        />
+      </div>
+      <div class="form-group">
+        <label for="doc_password1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="doc_password1"
+          name="doc_password1"
+          placeholder="Enter password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="doc_password2">Password (Confirm)</label>
+        <input
+          type="password"
+          class="form-control"
+          id="doc_password2"
+          name="doc_password2"
+          placeholder="Confirm password"
+        />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    {% endblock %}
